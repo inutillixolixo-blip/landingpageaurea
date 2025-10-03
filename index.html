@@ -1,195 +1,230 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurea Luz - Terapeuta Integrativa</title>
+    <title>Aurea Moreira - Terapias Integrativas</title>
+    <meta name="description" content="Descubra o equilíbrio para corpo, mente e espírito com as terapias integrativas de Aurea Moreira. Biorressonância, Reiki, Arteterapia e mais.">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Inter & Playfair Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0c1a1e; /* Fundo escuro base */
-        }
-        .font-serif-elegant {
-            font-family: 'Playfair Display', serif;
-        }
-        /* Efeito de gradiente no texto */
-        .text-gradient {
-            background: linear-gradient(to right, #a7f3d0, #6ee7b7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .cta-button {
-            transition: all 0.3s ease;
-        }
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="text-gray-300">
+<body class="bg-gray-800 text-gray-300">
 
     <!-- Header & Navegação -->
-    <header class="bg-gray-900/50 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-emerald-500/20">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <a href="#" class="text-2xl font-serif-elegant font-bold text-white">Aurea Luz</a>
-            <nav class="hidden md:flex space-x-6 items-center">
+    <header class="bg-gray-800/80 backdrop-blur-lg sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-emerald-400 font-serif">Aurea Moreira</a>
+            <nav class="hidden md:flex space-x-8">
                 <a href="#sobre" class="hover:text-emerald-400 transition-colors">Sobre Mim</a>
                 <a href="#terapias" class="hover:text-emerald-400 transition-colors">Terapias</a>
-                <a href="#depoimentos" class="hover:text-emerald-400 transition-colors">Depoimentos</a>
+                <a href="#contato" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Agendar Consulta</a>
             </nav>
-            <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="cta-button bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-5 rounded-lg">
-                Agendar Consulta
-            </a>
         </div>
     </header>
 
-    <!-- Seção Hero -->
-    <section id="hero" class="pt-32 pb-20 bg-gradient-to-b from-gray-900 via-emerald-900/60 to-[#0c1a1e]">
-        <div class="container mx-auto text-center px-4">
-            <h1 class="text-4xl md:text-6xl font-serif-elegant font-bold text-white leading-tight">Encontre Equilíbrio e Cura para <span class="text-gradient">Corpo e Mente</span></h1>
-            <p class="mt-6 text-lg max-w-2xl mx-auto text-gray-300">Descubra como as terapias integrativas podem transformar sua vida, aliviar dores e restaurar sua energia vital. Dê o primeiro passo na sua jornada de bem-estar.</p>
-            <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20iniciar%20minha%20jornada%20de%20cura." target="_blank" class="cta-button inline-block bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg py-4 px-10 rounded-lg mt-10">
-                Quero Iniciar Minha Jornada
-            </a>
+    <!-- Seção Principal (Hero) -->
+    <section class="bg-gray-900 text-white text-center py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold font-serif mb-4">Encontre o Equilíbrio e a Cura</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Através de terapias integrativas, guio você em uma jornada de autoconhecimento e bem-estar para corpo, mente e espírito.</p>
+            <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform hover:scale-105 inline-block">Comece sua Jornada Agora</a>
         </div>
     </section>
 
     <!-- Seção Sobre Mim -->
-    <section id="sobre" class="py-20 bg-[#0c1a1e]">
-        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-            <div class="text-center md:text-left">
-                <h2 class="text-3xl md:text-4xl font-serif-elegant font-bold text-white mb-4">Sobre a Terapeuta</h2>
-                <p class="mb-4">Olá, eu sou Aurea Luz, e minha missão é guiar você em uma jornada de autoconhecimento e cura. Com uma abordagem integrativa, utilizo técnicas ancestrais e modernas para tratar não apenas os sintomas, mas a raiz das suas questões físicas e emocionais.</p>
-                <p>Acredito que cada pessoa é única e merece um tratamento personalizado que harmonize corpo, mente e espírito. Vamos juntos encontrar o caminho para uma vida mais plena e saudável.</p>
-                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho." target="_blank" class="cta-button inline-block bg-transparent border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-white font-bold py-3 px-8 rounded-lg mt-8">
-                    Converse Comigo
-                </a>
+    <section id="sobre" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3">
+                <img src="image/aurea_luz.png" alt="Foto de Aurea Moreira" class="rounded-full shadow-2xl mx-auto border-4 border-emerald-900/50">
             </div>
-            <div>
-                <img src="image/aurea_luz.jpg" alt="Foto de Aurea Luz" class="rounded-2xl shadow-2xl mx-auto">
+            <div class="md:w-2/3 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif text-emerald-400 mb-4">Olá, eu sou Aurea Moreira</h2>
+                <p class="mb-4 text-lg">Como terapeuta integrativa, minha missão é ser uma facilitadora no seu processo de cura e autodescoberta. Acredito que cada indivíduo é único e possui um potencial imenso para o bem-estar e a felicidade.</p>
+                <p class="mb-4 text-lg">Utilizando uma abordagem holística, combino técnicas modernas e saberes ancestrais para tratar não apenas os sintomas, mas a raiz das questões, promovendo um equilíbrio duradouro em todas as áreas da sua vida.</p>
             </div>
         </div>
     </section>
 
-    <!-- Seção Terapias -->
-    <section id="terapias" class="py-20 bg-gray-900/70">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-serif-elegant font-bold text-white mb-12">Terapias Oferecidas</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card Terapia 1 -->
-                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Biorresson%C3%A2ncia." target="_blank" class="group block bg-gray-800/50 rounded-2xl border border-emerald-500/20 flex items-center gap-4 p-4 transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="image/biorressonancia.png" alt="Ícone da Terapia Biorressonância" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
-                    <div class="text-left">
-                        <h3 class="text-lg font-bold text-emerald-400 mb-1">Biorressonância</h3>
-                        <p class="text-sm mb-3">Diagnóstico quântico que identifica e promove a autocura de desequilíbrios.</p>
-                        <p class="font-semibold text-emerald-400 group-hover:text-white text-sm">Saiba Mais &rarr;</p>
+    <!-- Seção de Terapias -->
+    <section id="terapias" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif text-center text-emerald-400 mb-12">Terapias para sua Transformação</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card Arteterapia -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Arteterapia." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/arteterapia.png" alt="Arteterapia e Saúde" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Arteterapia e Saúde</h3>
+                        <p class="text-gray-400">Utilize a expressão artística como uma poderosa ferramenta de autoconhecimento, cura emocional e alívio do estresse.</p>
                     </div>
                 </a>
-                <!-- Card Terapia 2 -->
-                 <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Massagem%20Relaxante." target="_blank" class="group block bg-gray-800/50 rounded-2xl border border-emerald-500/20 flex items-center gap-4 p-4 transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="image/massagem.png" alt="Ícone da Terapia Massagem" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
-                    <div class="text-left">
-                        <h3 class="text-lg font-bold text-emerald-400 mb-1">Massagem Relaxante</h3>
-                        <p class="text-sm mb-3">Libere tensões, alivie o estresse e proporcione profundo bem-estar ao seu corpo.</p>
-                        <p class="font-semibold text-emerald-400 group-hover:text-white text-sm">Saiba Mais &rarr;</p>
+
+                <!-- Card Reiki Usui -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Reiki%20Usui." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/reiki.png" alt="Reiki Usui" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Reiki Usui</h3>
+                        <p class="text-gray-400">Canalize a energia vital universal para promover equilíbrio, reduzir a ansiedade e acelerar a capacidade natural de cura do corpo.</p>
                     </div>
                 </a>
-                <!-- Card Terapia 3 -->
-                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Auriculoterapia." target="_blank" class="group block bg-gray-800/50 rounded-2xl border border-emerald-500/20 flex items-center gap-4 p-4 transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="image/auriculoterapia.png" alt="Ícone da Auriculoterapia" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
-                    <div class="text-left">
-                        <h3 class="text-lg font-bold text-emerald-400 mb-1">Auriculoterapia</h3>
-                        <p class="text-sm mb-3">Trate dores, ansiedade e insônia através de pontos de estímulo na orelha.</p>
-                        <p class="font-semibold text-emerald-400 group-hover:text-white text-sm">Saiba Mais &rarr;</p>
+                
+                <!-- Card Reiki Xamânico -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Reiki%20Xam%C3%A2nico." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/reiki-xamanico.png" alt="Reiki Xamânico" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Reiki Xamânico</h3>
+                        <p class="text-gray-400">Integre a força dos elementos da natureza e a sabedoria ancestral para uma cura profunda e reconexão com sua essência.</p>
                     </div>
                 </a>
-                <!-- Card Terapia 4 -->
-                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Reiki%20e%20Biomagnetismo." target="_blank" class="group block bg-gray-800/50 rounded-2xl border border-emerald-500/20 flex items-center gap-4 p-4 transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="image/biomagnetismo.png" alt="Ícone de Biomagnetismo e Reiki" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
-                    <div class="text-left">
-                        <h3 class="text-lg font-bold text-emerald-400 mb-1">Reiki e Biomagnetismo</h3>
-                        <p class="text-sm mb-3">Harmonize seu campo energético com a imposição de mãos e ímãs terapêuticos.</p>
-                        <p class="font-semibold text-emerald-400 group-hover:text-white text-sm">Saiba Mais &rarr;</p>
+
+                <!-- Card Desparasitação -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Desparasita%C3%A7%C3%A3o." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/desparasitacao.png" alt="Desparasitação" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Desparasitação</h3>
+                        <p class="text-gray-400">Promova uma limpeza completa do seu organismo, eliminando toxinas e parasitas para restaurar sua energia e vitalidade.</p>
                     </div>
                 </a>
-                 <!-- Card Terapia 5 -->
-                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Terapia%20com%20Florais." target="_blank" class="group block bg-gray-800/50 rounded-2xl border border-emerald-500/20 flex items-center gap-4 p-4 transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="image/florais.png" alt="Ícone de Terapia Floral" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
-                    <div class="text-left">
-                        <h3 class="text-lg font-bold text-emerald-400 mb-1">Terapia com Florais</h3>
-                        <p class="text-sm mb-3">Use a essência das flores para tratar questões emocionais como medo e incerteza.</p>
-                        <p class="font-semibold text-emerald-400 group-hover:text-white text-sm">Saiba Mais &rarr;</p>
+
+                 <!-- Card Psicoterapia Reencarnacionista -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Psicoterapia%20Reencarnacionista." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/terapia-reencarnacionista.png" alt="Psicoterapia Reencarnacionista" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Psicoterapia Reencarnacionista</h3>
+                        <p class="text-gray-400">Acesse memórias passadas para compreender e curar questões do presente, descobrindo o propósito da sua alma.</p>
                     </div>
                 </a>
-                <!-- Card Terapia 6 -->
-                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Acupuntura." target="_blank" class="group block bg-gray-800/50 rounded-2xl border border-emerald-500/20 flex items-center gap-4 p-4 transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="image/acupuntura.png" alt="Ícone de Acupuntura" class="w-20 h-20 rounded-lg object-cover flex-shrink-0">
-                    <div class="text-left">
-                        <h3 class="text-lg font-bold text-emerald-400 mb-1">Acupuntura</h3>
-                        <p class="text-sm mb-3">Técnica milenar para restaurar o fluxo de energia e promover a saúde geral do corpo.</p>
-                        <p class="font-semibold text-emerald-400 group-hover:text-white text-sm">Saiba Mais &rarr;</p>
+                
+                <!-- Card Metaterapia -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Metaterapia." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/metaterapia.png" alt="Metaterapia" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Metaterapia</h3>
+                        <p class="text-gray-400">Utilize tecnologia de ponta para identificar e harmonizar desequilíbrios energéticos no seu corpo de forma precisa.</p>
+                    </div>
+                </a>
+
+                <!-- Card Biorressonância -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Biorresson%C3%A2ncia." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/biorressonancia.png" alt="Biorressonância" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Biorressonância</h3>
+                        <p class="text-gray-400">Faça um check-up completo do seu corpo e identifique desequilíbrios na origem para um tratamento preciso e eficaz.</p>
+                    </div>
+                </a>
+
+                <!-- Card Massagem Relaxante -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Massagem%20Relaxante." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/massagem.png" alt="Massagem Relaxante" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Massagem Relaxante</h3>
+                        <p class="text-gray-400">Liberte-se das tensões musculares, do estresse e da ansiedade, proporcionando um relaxamento profundo para corpo e mente.</p>
+                    </div>
+                </a>
+
+                <!-- Card Auriculoterapia -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Auriculoterapia." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/auriculoterapia.png" alt="Auriculoterapia" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Auriculoterapia</h3>
+                        <p class="text-gray-400">Trate dores, vícios e desequilíbrios emocionais através da estimulação de pontos energéticos na orelha.</p>
+                    </div>
+                </a>
+
+                <!-- Card Florais -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Florais." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/florais.png" alt="Florais" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Florais</h3>
+                        <p class="text-gray-400">Harmonize suas emoções e trate questões como medo, ansiedade e desânimo com a energia sutil das flores.</p>
+                    </div>
+                </a>
+
+                <!-- Card Acupuntura -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Acupuntura." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/acupuntura.png" alt="Acupuntura" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Acupuntura</h3>
+                        <p class="text-gray-400">Alivie dores crônicas, enxaquecas e outros desconfortos através da milenar técnica de equilíbrio energético.</p>
+                    </div>
+                </a>
+
+                <!-- Card Biomagnetismo -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20saber%20mais%20sobre%20Biomagnetismo." target="_blank" class="flex flex-col md:flex-row bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 border border-gray-700/50">
+                    <img src="image/biomagnetismo.png" alt="Biomagnetismo" class="w-full h-48 object-cover md:w-48">
+                    <div class="p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Biomagnetismo</h3>
+                        <p class="text-gray-400">Restaure o pH do seu corpo e combata microrganismos causadores de doenças com o poder dos ímãs.</p>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-     <!-- Seção Depoimentos -->
-    <section id="depoimentos" class="py-20 bg-[#0c1a1e]">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-serif-elegant font-bold text-white mb-12">O que dizem os pacientes</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Depoimento 1 -->
-                <div class="bg-gray-800/50 p-6 rounded-2xl border border-emerald-500/20">
-                    <p>"A Aurea é uma profissional incrível! Em poucas sessões, senti um alívio que não encontrava há anos. Recomendo de olhos fechados."</p>
-                    <p class="mt-4 font-bold text-emerald-400">- Maria S., Cuiabá-MT</p>
+    <!-- Seção de Depoimentos (Exemplo) -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif text-center text-emerald-400 mb-12">O Que Dizem Meus Clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-900/50 p-6 rounded-lg shadow-lg">
+                    <p class="italic mb-4">"A terapia com a Aurea foi um divisor de águas na minha vida. Encontrei um alívio que não sentia há anos."</p>
+                    <p class="font-bold text-emerald-400">- Maria S.</p>
                 </div>
-                <!-- Depoimento 2 -->
-                <div class="bg-gray-800/50 p-6 rounded-2xl border border-emerald-500/20">
-                    <p>"Eu não acreditava muito em terapias energéticas, mas o Reiki com a Aurea transformou minha ansiedade. Sou muito grato!"</p>
-                    <p class="mt-4 font-bold text-emerald-400">- João P., Várzea Grande-MT</p>
+                <div class="bg-gray-900/50 p-6 rounded-lg shadow-lg">
+                    <p class="italic mb-4">"Profissional incrível, atenciosa e com uma energia maravilhosa. Recomendo de olhos fechados!"</p>
+                    <p class="font-bold text-emerald-400">- João P.</p>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Seção CTA Final -->
-    <section id="cta-final" class="py-20 bg-gray-900/70">
-        <div class="container mx-auto text-center px-4">
-            <h2 class="text-3xl md:text-4xl font-serif-elegant font-bold text-white leading-tight">Pronta para Iniciar sua Jornada de Cura?</h2>
-            <p class="mt-4 text-lg max-w-2xl mx-auto text-gray-300">Sua saúde e bem-estar são prioridades. Permita-se viver com mais leveza, sem dores e com a mente em paz. A transformação que você busca está a uma mensagem de distância.</p>
-            <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Estou%20pronto(a)%20para%20come%C3%A7ar%20minha%20jornada.%20Podemos%20conversar%3F" target="_blank" class="cta-button inline-block bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg py-4 px-10 rounded-lg mt-10">
-                Agendar Minha Consulta Agora
-            </a>
+
+    <!-- Seção Final de Contato -->
+    <section id="contato" class="bg-gray-900 text-white text-center py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold font-serif mb-4">Pronto para Começar sua Transformação?</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Sua jornada para uma vida mais equilibrada e feliz começa com o primeiro passo. Entre em contato e vamos conversar sobre como posso ajudar você.</p>
+            <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform hover:scale-105 inline-block">Fale Comigo no WhatsApp</a>
         </div>
     </section>
 
     <!-- Rodapé -->
-    <footer class="bg-gray-900 border-t border-emerald-500/20 py-8">
-        <div class="container mx-auto text-center text-gray-400">
-            <p class="text-2xl font-serif-elegant font-bold text-white mb-4">Aurea Luz</p>
-            <div class="flex justify-center space-x-6 mb-6">
-                <a href="https://www.instagram.com/aureaterapiasmt" target="_blank" class="hover:text-emerald-400 transition-colors">Instagram</a>
-                <a href="https://www.facebook.com/aurea.silva.353?locale=pt_BR" target="_blank" class="hover:text-emerald-400 transition-colors">Facebook</a>
-                 <a href="https://api.whatsapp.com/send?phone=5565999828074" target="_blank" class="hover:text-emerald-400 transition-colors">WhatsApp</a>
+    <footer class="bg-gray-900 py-10">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <h3 class="text-2xl font-bold text-emerald-400 font-serif mb-4">Aurea Moreira</h3>
+            <p class="mb-6">Cuidando da sua saúde de forma integral.</p>
+            <div class="flex items-center justify-center space-x-6 mb-8">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/aureaterapiasmt" target="_blank" class="transition-transform duration-300 hover:scale-110" aria-label="Instagram">
+                    <img src="image/instagram.png" alt="Instagram" class="w-8 h-8">
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/aurea.silva.353?locale=pt_BR" target="_blank" class="transition-transform duration-300 hover:scale-110" aria-label="Facebook">
+                    <img src="image/facebook.png" alt="Facebook" class="w-8 h-8 object-contain">
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send?phone=5565999828074&text=Ol%C3%A1%2C%20Aurea!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="transition-transform duration-300 hover:scale-110" aria-label="WhatsApp">
+                   <img src="image/whatsapp.png" alt="WhatsApp" class="w-8 h-8">
+                </a>
             </div>
-            <p class="text-sm">&copy; 2024 Aurea Luz. Todos os direitos reservados.</p>
-             <a href="https://www.instagram.com/g.lbr_digital" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-500 hover:text-emerald-400 transition-colors duration-300 mt-4 inline-block">
+            <p class="text-sm">&copy; 2025 Aurea Moreira. Todos os direitos reservados.</p>
+            <a href="https://www.instagram.com/g.lbr_digital" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-500 hover:text-white transition-colors duration-300 mt-2 block">
                 Desenvolvido por GR Digital
             </a>
         </div>
     </footer>
-
 </body>
 </html>
 
